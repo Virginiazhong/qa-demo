@@ -1,0 +1,8 @@
+name: 我的第一条流水线
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 打印一句话
+        run: echo "CI/CD 流水线跑起来了！"
